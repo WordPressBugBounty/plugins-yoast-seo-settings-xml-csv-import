@@ -3,9 +3,9 @@ Contributors: soflyy, wpallimport
 Tags: seo, import seo, search engine optimization, import search engine optimization, yoast
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Requires at least: 4.1.0
-Tested up to: 6.9
-Stable tag: 1.1.8
+Requires at least: 5.0
+Tested up to: 7.1
+Stable tag: 2.0
 
 Drag & drop to import from any CSV, Excel, XML, or Google Sheets file into Yoast SEO's titles, meta descriptions, focus keywords, schema settings and more.
 
@@ -56,7 +56,7 @@ Don't have time? We'll write one for you.
 
 == Installation ==
 
-First, install [WP All Import](http://wordpress.org/plugins/wp-all-import "WordPress XML & CSV Import").
+First, install [WP All Import](http://wordpress.org/plugins/wp-all-import "WordPress XML & CSV Import"). Version 2.0 of this add-on requires WP All Import 3.7.6 or later, or WP All Import Pro 4.8.9 or later.
 
 Then install the Yoast WordPress SEO Add-On.
 
@@ -69,6 +69,19 @@ To install the Yoast WordPress SEO Add-On, either:
 The Yoast WordPress SEO Add-On will appear in the Step 3 of WP All Import.
 
 == Changelog ==
+
+= 2.0 =
+* maintenance: requires WP All Import 3.7.6 or later, or WP All Import Pro 4.8.9 or later
+* bug fix: PHP 8.2 and later deprecation notices about dynamic properties in RapidAddon
+* bug fix: fatal error when an import runs from WP-CLI
+* bug fix: taxonomy imports offered the post fields and saved no SEO data
+* bug fix: imported taxonomy SEO data did not appear on the site until the term was saved again
+* bug fix: cornerstone content was saved to a field Yoast SEO no longer reads
+* bug fix: PHP warnings while setting up an import
+* improvement: breadcrumbs title can be imported for posts
+* improvement: Facebook and X images are stored with their attachment ID, as Yoast SEO does
+* improvement: the import log lists each Yoast SEO field that was updated
+* improvement: Twitter fields are renamed to X
 
 = 1.1.8 =
 * bug fix: deprecated field _yoast_wpseo_redirect in import field list
